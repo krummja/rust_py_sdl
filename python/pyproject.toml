@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Crum <crumja@uga.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+devtools = "^0.11.0"
+rich = "^13.3.3"
+python-sdl2 = "^0.0.2"
+rustpy = {path = "../target/wheels/rustpy-0.1.0-cp311-none-win_amd64.whl"}
+cython = "^0.29.34"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

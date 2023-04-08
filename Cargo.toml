@@ -1,0 +1,15 @@
+[package]
+name = "rustpy"
+version = "0.1.0"
+
+[lib]
+name = "rustpy"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18.2", features = ["extension-module"] }
+sdl2 = { version = "0.35.2", features = ["bundled"] }
+send_wrapper = { version = "0.6.0" }
+
+[package.metadata.maturin]
+python-source = "python"
